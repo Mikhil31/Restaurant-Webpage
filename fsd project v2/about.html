@@ -4,43 +4,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About us</title>
 </head>
- <style>.box{
-         width: 900px;
+ <style>
+ /* .box{
+         width: 490px;
          float: right;
      }
      .box ul li{
-          width: 120px;
+          width: 100px;
           float: left;
           margin: 10px auto;
           text-align: center;
      }
      .box a {
          text-decoration: none;
-         color: darkgray;
+         color: black;
      }
      .box ul li:hover{
-         background-color: green;
+         background-color: yellow;
      }
      .box a:hover{
-         color: white;
-     }
-     .welcome{
-         width: 300px;
-         height: 600px;
-         background-color: black;
-         opacity: 0.9;
-         padding: 55px;
-     }</style>
+         color: black;
+     } */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: yellow;
+  color: black;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.opt form, input[type="submit"] {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 16px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 800;
+  width: 100%;
+}
+
+.opt form, input[type="submit"] {
+  background-color: yellow;
+  color: black;
+}
+
+     </style>
 <body>
-    <div class="box">
-    <ul type="none">    
-  <li><a href="#home">Home</a> </li>
-  <li><a href="menu.html"target="_blank">Our Menu</a></li>
-  <li><a href="contact.html"target="_blank">Contact</a></li>
-  <li><a href="about.html" target="_blank">About</a></li>
+    <!-- <div class="box">
+    <ul type="none"> 
+    <a href="index.html"><img src="logo.png" alt="logo" width="100dp"></a>
+  <b><li><a href="menu.html">Our Menu</a></li></b>
+  <b><li><a href="contact.html">Contact</a></li></b>
+  <b><li><a href="about.html">About</a></li></b>
   </ul>
+  </div> -->
+  <div class="about-section">
+      <a href="index.html"><img src="logo.png" alt="logo" width="100dp"> </a>
+  <h1>About Us</h1>
+
+  <i><p style="font-weight:800;">Life is too short for boring food</p></i>
+</div>
+<br>
+<hr>
+<u> <h2 style="text-align:center; font-size: 200%;">Our Team</h2> </u>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images\staff.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2 style="text-align: center;">Our Staff</h2>
+        <p style="font-weight:550; text-align: center;">Highly trained and experienced staff to handle all types of incidents and scenarios</p>
+        <form action="reservation.html">
+       <input type="submit" value="Go to Google" />
+    </form>
+      </div>
+    </div>
   </div>
+
+  <div class="column">
+    <div class="card">
+       <img src="images\chef.png" alt="Jane" style="width:93%">
+      <div class="container">
+        <h2 style="text-align: center;">Chefs</h2>
+        <p style="font-weight:550; text-align: center;">Highly trained and experienced chefs in each cuisine and seasoned professionals</p>
+         <form action="reservation.html">
+       <input type="submit" value="Go to Google" />
+    </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+       <img src="images\general manager.png" alt="Jane" style="width:93%">
+      <div class="container">
+        <h2 style="text-align: center;">General Manager</h2>
+        <p style="font-weight:550; text-align: center;">Organised and experienced member of our team and brings his best each and every day without fail</p>
+         <form action="reservation.html">
+       <input type="submit" value="Go to Google" />
+    </form>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
