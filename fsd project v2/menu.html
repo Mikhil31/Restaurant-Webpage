@@ -1,41 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Menu</title>
-</head>
+<title>Our Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
 <style>
-    .box{
-         width: 900px;
-         float: right;
-     }
-     .box ul li{
-          width: 120px;
-          float: left;
-          margin: 10px auto;
-          text-align: center;
-     }
-     .box a {
-         text-decoration: none;
-         color: darkgray;
-     }
-     .box ul li:hover{
-         background-color: green;
-     }
-     .box a:hover{
-         color: white;
-     }
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90%;
+} 
+.logo{
+  padding: 400px;
+}
 </style>
+</head>
 <body>
-     <div class="box">
-    <ul type="none">    
-  <li><a href="index.html"target="_blank">Home</a> </li>
-  <li><a href="menu.html">Our Menu</a></li>
-  <li><a href="contact.html"target="_blank">Contact</a></li>
-  <li><a href="about.html" target="_blank">About</a></li>
-  </ul>
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+   
+     
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Indian Dishes</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Japanese Dishes</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Arabic dishes</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Chicken 65</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹1700/</span></h1>
+      <p class="w3-text-grey">Spicy, deep-fried chicken dish whose flavor of the dish can be attributed to red chillies</p>
+      <hr>
+   
+      <h1><b>Hyderabadi Biryani</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹200/</span></h1>
+      <p class="w3-text-grey"> It combines elements of Hyderabadi and Mughlai cuisines.</p>
+      <hr>
+      
+      <h1><b>Butter Paneer Masala</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹170/</span></h1>
+      <p class="w3-text-grey"> Slightly sweet dish of paneer</p>
+      <hr>
+
+      <h1><b>Gulab Jamun</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Fried balls of a dough made from milk solids and semolina</p>
+      <hr>
+
+      <h1><b>Kesar Kheer</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">₹50/</span></h1>
+      <p class="w3-text-grey">Sweet disch derived from milk</p>
+      <hr>
+
+      <h1><b>Chicken Tandoori</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">₹400/</span></h1>
+      <p class="w3-text-grey">Freshly spiced tender and juicy chicken full of flavours</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Vegetable Gyoza</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">₹790/</span></h1>
+      <br>
+      <hr>
+   
+      <h1><b>Japanese Chilled Tofu</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹1000/</span></h1>
+      <br>
+      <hr>
+      
+      <h1><b>Teriyaki Rib Eye Steaks </b><span class="w3-tag w3-grey w3-round"> New</span> <span class="w3-right w3-tag w3-dark-grey w3-round">₹1700/</span></h1>
+      <br>
+      <hr>
+
+      <h1><b>Coffee Jelly</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹30/</span></h1>
+      <br>
+      <hr>
+      </div>
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Manakeesh</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">₹790/</span></h1>
+      <br>
+      <hr>
+   
+      <h1><b>Fattoush</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹300/</span></h1>
+      <br>
+      <hr>
+      <h1><b>Mutabal</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹900/</span></h1>
+      <br>
+      <hr>
+      <h1><b>Grilled halloumi</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹90/</span></h1>
+      <br>
+      <hr>
+      <h1><b>Baklava</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹500/</span></h1>
+      <br>
+      <hr>
+      </div>
+      
+    </div>
+   <a href="index.html"> <h4 class="w3-center w3-jumbo" style="margin-bottom:64px">Back to home</h4></a>
   </div>
+</div>
+<script>
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
 </body>
 </html>

@@ -1,41 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-</head>
+    <title>Contact us </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    .box{
-         width: 900px;
-         float: right;
-     }
-     .box ul li{
-          width: 120px;
-          float: left;
-          margin: 10px auto;
-          text-align: center;
-     }
-     .box a {
-         text-decoration: none;
-         color: darkgray;
-     }
-     .box ul li:hover{
-         background-color: green;
-     }
-     .box a:hover{
-         color: white;
-     }
+body {
+  font-family: cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: yellow;
+  color: black;
+  font-weight: 700;
+  padding: 12px 20px;
+  border: none;
+  
+}
+
+input[type=submit]:hover {
+  background-color: green;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-contact{
+    color: green;
+}
+
 </style>
+</head>
 <body>
-    <div class="box">
-    <ul type="none">    
-  <li><a href="#home">Home</a> </li>
-  <li><a href="menu.html"target="_blank">Our Menu</a></li>
-  <li><a href="contact.html"target="_blank">Contact</a></li>
-  <li><a href="about.html" target="_blank">About</a></li>
-  </ul>
+<div class="container">
+  <div style="text-align:center"> 
+    
+    <a href="contact.html"><div class="main-contact"><h2>Contact Us</h2></div></a>
+    <a href="index.html"> <img src="logo.png" alt="logo" width="100dp"> </a>
+    <i><p style="font-weight:800;">Life is too short for boring food</p></i>
   </div>
+  <div class="row">
+    <div class="column">
+        <h2 style="padding-left: 20%;">Feel free to walk in!</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31113.997181052233!2d77.62390319011561!3d12.891662342962196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14b023dade9d%3A0x35272e55303bd711!2sDayananda%20Sagar%20University!5e0!3m2!1sen!2sin!4v1653322602647!5m2!1sen!2sin" width="600" height="450" style="align-items: auto; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="column">
+        <br>
+        <h2 style="text-align:center;">Write to us, we'd love to hear from you</h2>
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="number">Contact number</label>
+        <input type="number" id="fname" name="firstname" placeholder="Your number..">
+        <label for="subject">Feedback</label>
+        <textarea id="subject" name="subject" placeholder="Feel free to write to us.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
